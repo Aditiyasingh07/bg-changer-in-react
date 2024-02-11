@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from 'react';
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
       <div className=" main" style={{backgroundColor: Hello}}>
-          <div className="colors">
+          <button className="colors">
           <button onClick={() => setHello("red")}
           className="btn" style={{backgroundColor: "red"}}>Red</button>
           <button onClick={() => setHello("pink")}
@@ -18,7 +19,9 @@ function App() {
           className="btn" style={{backgroundColor: 'olive'}}>olive</button>
           <button onClick={() => setHello("hotpink")}
           className="btn" style={{backgroundColor: 'hotpink'}}>hotpink</button>
-          </div>
+          <button onClick={() => setHello("green")}
+          className=' text-black h2 p-3 rounded-4 m-0 border-0' style={{backgroundColor: 'green'}}>green</button>
+          </button>
       </div>
   )
 }
